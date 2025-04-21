@@ -5,7 +5,7 @@ import csv
 # pythonanywhere link: https://rkprashad.pythonanywhere.com/
 
 # gitHub public APIs > News > https://newsapi.org/
-api_key = 'pub_684944c54bb6dae688208ee2a0304228081a5'
+api_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 url = f"https://newsdata.io/api/1/latest?apikey={api_key}"
 # r=requests.get(url)
 # r.status_code
@@ -64,7 +64,7 @@ def article_by_id(article_id):
 # display current weather of the visitor location
 def get_user_weather():
     # from githup public apis > Geocoding > Abstract IP Geolocation > https://www.abstractapi.com/api/ip-geolocation-api
-    api_key1 = '3fb93eca12934057ae39808ae97618e6'
+    api_key1 = 'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy'
     url = f"https://ipgeolocation.abstractapi.com/v1/?api_key={api_key1}&ip_address="
     res1=requests.get(url)
     # this returns a byte array. so we need to convert it to json dictionary
@@ -75,7 +75,7 @@ def get_user_weather():
     lat = visitor_location['latitude'] 
     lon = visitor_location['longitude']
     # from weather app class notes
-    api_key2 = '945adbb603b4fda2f19f4fa7a6b88699'
+    api_key2 = 'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz'
     url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key2}&units=metric"
     try:
         res2=requests.get(url)
@@ -90,7 +90,7 @@ def get_user_weather():
 
 # Forex
 def exch_rates():
-    api_key3 = '913444f7c03dd71b6dc4c7aa'
+    api_key3 = 'kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'
     url = f"https://v6.exchangerate-api.com/v6/{api_key3}/latest/AUD"
     try:
         res3=requests.get(url)
